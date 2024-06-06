@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+}
+.container-fluid img {
+  width: 75px;
+  height: 50px;
+  object-fit: cover;
+  right: 0;
+}
+
+.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
+  margin-left: 80px;
+}
+.btn.btn-outline-success {
+  border-color: black;
+  color: black;
+  border-radius: 1px;
+  width: 80px;
+  height: 40px;
+}
+.btn.btn-outline-success:hover {
+  background-color: rgb(244, 108, 252) !important;
+}
+
+.carousel-item {
+  height: 65vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.carousel-caption {
+  bottom: 20%;
+}
+.carousel-caption h5 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+.carousel-caption button {
+  color: white;
+  border-radius: 1px;
+  margin-left: 20px;
+}
+
+.carousel-item.active div {
+  filter: brightness(100%) !important;
+  border-radius: 5px;
+}
+.image-filtre {
+  filter: brightness(70%);
+}
+.btn.btn-primary.btn-lg {
+  border-radius: 1px;
+}
+.btn.btn-secondary.btn-lg {
+  border-radius: 1px;
+  margin: 20px;
+}
+/* Custom CSS */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.welcome-section,
+.why-choose-us,
+.events-section {
+  padding: 60px 0;
+  text-align: center;
+}
+.welcome-section h2,
+.why-choose-us h2,
+.events-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.welcome-section p,
+.why-choose-us p,
+.events-section p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 18px;
+  color: #666;
+}
+.room-images,
+.why-choose-us .images,
+.events-section .images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.room-images img,
+.why-choose-us img,
+.events-section img {
+  max-width: 50%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 20px);
+  height: 400px;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .room-images img,
+  .why-choose-us img,
+  .events-section img {
+    width: calc(50% - 20px);
+  }
+}
+@media (max-width: 576px) {
+  .room-images img,
+  .why-choose-us img,
+  .events-section img {
+    width: 100%;
+  }
+}
+
+.carousel-item.active img {
+  filter: brightness(70%);
+}
+
