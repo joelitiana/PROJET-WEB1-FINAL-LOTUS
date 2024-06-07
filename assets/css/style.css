@@ -73,6 +73,9 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.custom-btn {
+  font-size: x-large;
+}
 
 .carousel-caption {
   position: absolute;
