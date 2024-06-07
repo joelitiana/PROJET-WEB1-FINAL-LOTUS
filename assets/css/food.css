@@ -1,0 +1,46 @@
+.food .card {
+  border: none;
+}
+
+.food .card-img-top {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner {
+  position: relative;
+}
+.banner img {
+  filter: brightness(70%);
+}
+
+text {
+  color: rgb(242, 255, 255);
+}
+
+.fixed-top-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.fixed-top-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.banner {
+  text-align: center;
+  padding: 0.5rem 0;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+.food {
+  padding-top: 2rem;
+  padding-right: 0.5rem;
+}
