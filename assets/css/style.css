@@ -214,10 +214,11 @@ body {
 .carousel-item.active img {
   filter: brightness(70%);
 }
-
+hr {
+ color:white !important;
+}
 #services {
   position: relative;
-  background-image: url("../image/Premium\ Photo\ _\ Abstract\ blur\ luxury\ hotel\ lobby\ for\ background.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -228,14 +229,22 @@ body {
   height: auto;
 }
 
+.card:hover {
+  transform: scale(1.05);
+}
+
+
 .overlay {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
+  background: #83a4d4;
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+  background: linear-gradient(to right, #b6fbff, #83a4d4);
+  
+  }
 
 .content {
   position: relative;
@@ -243,8 +252,9 @@ body {
 }
 
 .card {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgb(255, 255, 255);
   border: none;
+  mix-blend-mode: multiply;
 }
 
 .card h5,
