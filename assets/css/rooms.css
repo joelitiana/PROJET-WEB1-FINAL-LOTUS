@@ -54,3 +54,11 @@
   align-items: center;
   margin-left: 50vw;
 }
+.room-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.room-card:hover {
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+}

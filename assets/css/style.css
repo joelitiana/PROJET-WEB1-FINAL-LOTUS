@@ -209,7 +209,7 @@ body {
 
 #services {
   position: relative;
-  background-image: url("../image/Premium\ Photo\ _\ Abstract\ blur\ luxury\ hotel\ lobby\ for\ background.jpg"); 
+  background-image: url("../image/Premium\ Photo\ _\ Abstract\ blur\ luxury\ hotel\ lobby\ for\ background.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -257,4 +257,9 @@ body {
   .container {
     margin-bottom: 50px;
   }
+}
+.room-images img:hover {
+  filter: grayscale(100%);
+  transform: scale(0.99);
+  transition: transform 0.2s ease;
 }
