@@ -4,29 +4,17 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.navbar-brand {
-  margin-left: 20px;
-}
-.container-fluid img {
-  width: 75px;
-  height: 50px;
-  object-fit: cover;
-  right: 0;
+html {
+  scroll-behavior: smooth;
 }
 
-.navbar-nav.me-auto.my-2.my-lg-0.navbar-nav-scroll {
-  margin-left: 80px;
+.navbar-nav .nav-link {
+  transition: background-color 0.3s, color 0.3s;
 }
-.btn.btn-outline-success {
-  border-color: black;
-  color: black;
-  border-radius: 1px;
-  width: 80px;
-  height: 40px;
-}
-.btn.btn-outline-success:hover {
-  background-color: rgb(244, 108, 252) !important;
+
+.navbar-nav .nav-link:hover {
+  background-color: #6ea2db;
+  color: white;
 }
 
 .carousel-item {
@@ -36,14 +24,14 @@
   position: relative;
 }
 .carousel-caption {
-  bottom: 20%;
+  bottom: 12%;
 }
 .carousel-caption h5 {
-  font-size: 3.5rem;
+  font-size: 3.1rem;
   font-weight: bold;
 }
 .carousel-caption p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .carousel-caption button {
   color: white;
@@ -52,7 +40,6 @@
 }
 
 .carousel-item.active div {
-  filter: brightness(100%) !important;
   border-radius: 5px;
 }
 .image-filtre {
@@ -65,7 +52,99 @@
   border-radius: 1px;
   margin: 20px;
 }
-/* Custom CSS */
+body {
+  margin-top: 76px;
+}
+
+.carousel-item {
+  height: 60vh;
+  min-height: 300px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    padding: 0 5px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.8rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption {
+    padding: 0 5px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+
+  .carousel-caption a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  .carousel-caption {
+    padding: 0 5px;
+    margin-top: -5vw;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.1rem;
+  }
+
+  .carousel-caption a {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 1440px) {
+  .carousel-caption {
+    padding: 0 5px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 3rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption a {
+    font-size: 0.6rem;
+  }
+}
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -128,3 +207,59 @@ body {
   filter: brightness(70%);
 }
 
+#services {
+  position: relative;
+  background-image: url("../image/Premium\ Photo\ _\ Abstract\ blur\ luxury\ hotel\ lobby\ for\ background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 5rem 0;
+}
+.service-logo {
+  max-width: 60px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+}
+
+.card h5,
+.card p {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    height: auto;
+  }
+  .container {
+    margin-bottom: 50px;
+  }
+}
+.room-images img:hover {
+  filter: grayscale(100%);
+  transform: scale(0.99);
+  transition: transform 0.2s ease;
+}
